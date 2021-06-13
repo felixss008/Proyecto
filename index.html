@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
+      
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/site.css" />
-    <title>Arrowverse</title>
+    <title>Arrow</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <style>
-      * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+        header {
+    color: #353535;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: #f3f6ff;
 }
-header {
-  height: 100%;
-  width: 100%;
-  padding-left: 20px;
-  background-color: teal;
-  display: flex;
-  align-items: center;
-  font-family: cursive;
-  padding-top: 5px;
+
+a {
+    color: #FF6F61;
 }
+
+a:hover,
+a:active,
+a:focus {
+    color: #353535;
+    outline: none;
+    text-decoration: none;
+}
+
 h1 {
-  width: 20%;
-  height: 50%;
-  font-size: 100px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
 }
-img {
-  width: 150px;
-  height: 150px;
-  margin-right: 20%;
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
 }
-.cont {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(63, 66, 48);
-  display: flex;
-  flex-flow: row;
+.Lastestnews {
+     padding:90px 0px;
+     background: #fff;
 }
-.cont > .img-cont > img {
-  width: 90%;
-  height: 70%;
-  
+ .Lastestnews .titlepage {
+     text-align: center;
+     margin-bottom: 60px;
 }
-.cont > #last-cont {
-  margin-left: 10px;
+ .Lastestnews .titlepage h2 {
+     font-size: 60px;
+     line-height: 62px;
+     color:#030000;
+     font-weight: 500;
+     text-transform: uppercase;
 }
-.cont > #first {
-  margin-left: 10px;
+ .Lastestnews .titlepage span {
+     color: #060606;
+     font-size: 17px;
+     line-height: 23px;
 }
-.cont > .img-cont {
-  margin-right: 20px;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
+ .Lastestnews .news-box {
+     background:#fff;
+     box-shadow: #ddd 0px 0px 8px 4px;
+}
+ .Lastestnews .news-box figure {
+     margin: 0;
+}
+ .Lastestnews .news-box figure img {
+     width: 100%;
+}
+ .Lastestnews .news-box h3 {
+     font-size: 22px;
+     line-height: 24px;
+     color: #060606;
+     font-weight: 500;
+     padding: 20px 20px 4px 20px;
+}
+ .Lastestnews .news-box span {
+     color: #e61414;
+     margin-left: 20px;
+}
+ .Lastestnews .news-box p{
+     color: #7b7a7a;
+     font-size:16px;
+     line-height: 23px;
+     padding: 7px 20px 20px 20px;
+ }
+ .text
+{
+  background: rgb(155, 240, 240);
 }
 .videos
 {
@@ -104,6 +136,11 @@ img {
   margin-right: 30px;
  width: 700px;
  height: 200px;
+ padding-top: 10px;
+}
+.Arr
+{
+    padding-top: 15px;
 }
 .P_T{
   font-size: 15px;
@@ -212,41 +249,46 @@ table tr:nth-child(1){
             border: black 5px double;
         }
 
-    </style>
-  </head>
-  <body>
-    <header>
-      
-      <img src="Imagen/l_arroverse.jpg">
-      <h1>Arrowverse</h1>
-    </header>
-    <div class="cont">
-      <div class="img-cont" id="first">
-        <a href="Arrow.html"><img src="Imagen/l_arrow.jpg"></a>
-      </div>
-      <div class="img-cont">
-        <a href="Flash.html"><img src="Imagen/l_flash.jpg"></a>
-      </div>
-      <div class="img-cont">
-        <a href="Supergirl.html"><img src="Imagen/l_supergirl.jpg"></a>
-      </div>
-      <div class="img-cont">
-        <a href="legends.html"><img src="Imagen/l_legends.jpg"></a>
-      </div>
-      <div class="img-cont" id="last-cont">
-        <a href="Black.html"><img src="Imagen/l_black.jpg"></a>
-      </div>
-      <div class="img-cont" id="last-cont">
-        <a href="Batwoman.html"><img src="Imagen/l_batwoman.jpg"></a>
-      </div>
-      <div class="img-cont" id="last-cont">
-        <a href="superman.html"><img src="Imagen/l_superman.jpg"></a>
-      </div>
+@media(min-width: 992px) {
+    .container-fluid {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+}
+
+        </style>
+
+    <body>
+<header>
+  <audio src="Sonido/Lucifer.m4a"  autoplay></audio>
+<div class="nav">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a href="index.html" class="navbar-brand">Arrowverse</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mr-auto">
+                    <a href="Arrow.html" class="nav-item nav-link">Arrow</a>
+                    <a href="Flash.html" class="nav-item nav-link">Flash</a>
+                    <a href="Supergirl.html" class="nav-item nav-link">Supergirl</a>
+                    <a href="Legends.html" class="nav-item nav-link">Legends</a>
+                    <a href="black.html" class="nav-item nav-link">Black</a>
+                    <a href="Batwoman.html" class="nav-item nav-link">Batwoman</a>
+                    <a href="Superman.html" class="nav-item nav-link">Superman</a>
+                    
+                    </div>
+                </div>
+</header>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 margin text">
+    <div class="news-box Imagen_arrowverse">
+        <figure><img src="Imagen/p_arrowverse.jpg " alt="img" />  </figure>  <span><H1>Arrowverse</H1></span>
     </div>
-    <script src="js/js.js"></script>
-    <tr></tr>
-    <div class="parrafo">
-      <IMG class="i_parrafo" SRC="Imagen/p_arrowverse.jpg" ALIGN=LEFT >
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 margin text">
+    <div class="news-box">
         El Arrowverso es una franquicia de medios estadounidense y un universo ficticio compartido 
                 que se centra en varias series de televisión que se emiten principalmente en The CW y series
                  web en CW Seed. Los programas fueron desarrollados por Greg Berlanti, Marc Guggenheim, Andrew
@@ -256,7 +298,8 @@ table tr:nth-child(1){
                    elementos de la trama, escenarios, elenco y personajes comunes que abarcan seis series de 
                    televisión de acción en vivo y dos animadas.
     </div>
-    <div class="C_videos">
+</div>
+<div class="C_videos">
     <div class="vid_cont" id="fir">
         
           <video class="invasion" src="Video/The Crossover - Team Arrow_ Team Flash_ Team Legends and Supergirl vs The Dominators -PART2-(720P_HD).mp4" 
@@ -509,5 +552,14 @@ table tr:nth-child(1){
 
   
 </table>
-  </body>
+  
+                <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 </html>
